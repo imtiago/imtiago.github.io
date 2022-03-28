@@ -1,0 +1,21 @@
+<html lang="en"><head>
+    <script type="module" src="/@vite/client"></script>
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="root"><div><a href="#">Usuarios</a></div><div><a href="#">Endereços</a></div><div><a href="#">Produtos</a></div><div><a href="#">Concursos</a></div><form action="http://localhost:3333/users/add" method="POST"><h1>Formulario de Cadastramento de Usuário</h1><label>Nome Completo: </label><input type="text" name="name"><br><label>Como gostaria de ser chamado: </label><input type="text"><br><label>Data de Nascimento: </label><input type="date"><br><label>CPF: </label><input name="cpf"><br><label>RG: </label><input name="rg"><br><label>E-mail: </label><input type="email" name="email"><br><label>Senha: </label><input type="password" name="password"><br><label>Confirme sua Senha: </label><input type="password" name="password_confirmation"><br><input type="submit" value="Cadastrar Usuário"></form><form action="http://localhost:3333/address/add" method="POST"><h1>Formulario de Cadastramento de endereço</h1><label>Cep: </label><input type="text" name="cep"><br><label>logradouro: </label><input type="text" name="logradouro"><br><label>Numero: </label><input type="number" name="number"><br><label>Bairro: </label><input name="neighborhood"><br><label>Cidade: </label><input name="city"><br><label>UF: </label><input type="text" name="uf"><br><label>Complemento: </label><input type="text" name="complement"><br><input type="submit" value="Cadastrar Endereço"></form><form action="http://localhost:3333/products/add" method="POST"><h1>Formulario de Cadastramento de Concursos</h1><label>Pesquisar produto a ser sorteado: </label><input type="text" name="name"><br><label>Quantidade de rifas disponiveis: </label><input type="number"><br><label>Possivel data de sorteio: </label><input type="date"><br><input type="submit" value="Cadastrar Sorteio"></form><form action="http://localhost:3333/products/add" method="POST"><h1>Formulario de Cadastramento de Produtos</h1><label>Nome: </label><input type="text" name="name"><br><label>detalhes: </label><input type="text"><br><label>preço: </label><input type="number"><br><label>novo: </label><input type="checkbox" name="cpf"><br><input type="submit" value="Cadastrar Produto"></form><ul></ul><form action="http://localhost:3333/users/login" method="POST"><h1>Login</h1><label>E-mail: </label><input type="email" name="email"><br><label>Senha: </label><input type="password" name="password"><br><input type="submit" value="Entrar"></form></div>
+    <script type="module" src="/src/main.tsx?t=1648504346216"></script>
+  
+
+</body></html>
